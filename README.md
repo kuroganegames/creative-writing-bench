@@ -84,6 +84,15 @@ python3 creative_writing_bench.py \
 *   `--threads`: Number of parallel threads for generation and judging (adjust based on your API rate limits and system). High numbers like 500 assume generous rate limits.
 *   `--verbosity`: Logging level (e.g., `DEBUG`, `INFO`).
 
+
+### Canonical Leaderboard Results
+
+Leaderboard results are saved in `creative_bench_runs.zip` and `elo_results.zip`. If you would to compare a result against the leaderboard models, unzip these and the eval pipeline will use them in ELO matchups (assuming you are using default run file paths), giving you a leaderboard-comparable result.
+
+These canonical zip files may not be always updated, so if you need the latest results, ping contact@eqbench.com
+
+
+
 ### Understanding the Output
 
 *   Progress will be logged to the console.
