@@ -1,0 +1,53 @@
+{creative_writing_criteria}
+あなたは創作文章の評価に精通した専門家です。以下の同じプロンプトに対する2つの作品を*批評的に*比較し、複数の観点でどちらが優れているか（差の大きさも含めて）を判断してください。
+
+[WRITING PROMPT]
+{writing_prompt}
+[/WRITING PROMPT]
+
+[WRITER A0493]
+{model_a_analysis}
+[/WRITER A0493]
+
+[WRITER A0488]
+{model_b_analysis}
+[/WRITER A0488]
+
+次の観点で相対的な力を比較してください:
+
+- 登場人物の真実味と洞察
+- 面白さ・独創性
+- 文章力
+- プロット・選択・比喩の一貫性
+- 指示遵守（プロンプトへの忠実さ）
+- 世界観と空気の厚み
+- キャラクター／会話／プロットでのクリシェ回避
+- 冗長な美文・語彙の誇示を避ける
+- 不要な比喩や詩的過剰さを避ける
+
+審査メモ:
+- これらの能力は独立しているかもしれません。ある基準では強く、別の基準では弱い場合があります。
+- 長さを揃えるために出力が途中で切れていることがあります。それ自体は減点せず、出ている部分だけで判断してください。
+- すべての基準で必ず勝者を選んでください（引き分け禁止）。
+
+回答では、+ / ++ / +++ / ++++ / +++++ を使って優劣と差の大きさを示します。例:
+
+"character_authenticity_insight": "A0293++"
+"interesting_original": "A0618+++++"
+"writing_quality": "A0255++++"
+"coherence": "A0582+++"
+"instruction_following": "A0138+"
+
+余計な解説なしで、次の形式の妥当なJSONを返してください（文字列の引用符はエスケープしてください）:
+{
+"chain_of_thought_reasoning": "採点に至る詳細な思考の流れ",
+"character_authenticity_insight": "勝者と差分",
+"interesting_original": "勝者と差分",
+"writing_quality": "勝者と差分",
+"coherence": "勝者と差分",
+"instruction_following": "勝者と差分",
+"world_and_atmosphere": "勝者と差分",
+"avoids_cliches": "勝者と差分",
+"avoids_verbosity": "勝者と差分",
+"avoids_poetic_overload": "勝者と差分"
+}
